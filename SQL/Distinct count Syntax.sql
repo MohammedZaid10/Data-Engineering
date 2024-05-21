@@ -1,1 +1,1 @@
-SELECT COUNT( DISTINCT (column) FROM table;
+SELECT COUNT(DISTINCT(column)) FROM table;
