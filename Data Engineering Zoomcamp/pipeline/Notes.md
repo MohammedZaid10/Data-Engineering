@@ -11,4 +11,8 @@ https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/01-docker-t
 https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/01-docker-terraform/docker-sql/02-virtual-environment.md
 
 docker run -it     --rm     -v "/workspaces/Data-Engineering/Data Engineering Zoomcamp/pipeline:/app"     --entrypoint=
-bash     python:3.9.16-slim
+bash     python:3.13.11-slim
+
+docker build -t test:pandas .
+
+docker run -it --entrypoint=bash --rm test:pandas
